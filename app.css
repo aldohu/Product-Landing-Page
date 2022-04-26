@@ -1,2 +1,220 @@
 
+    :root {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Lato";
+    }
+
+    #header-img {
+        display:block;
+        max-width:300px;
+    }
+    nav ul {
+        list-style-type: none;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    ol {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    ol li {
+        background-color: #fff;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap:nowrap;
+        background:#eee;
+    }
+    h2 {
+        word-wrap: break-word;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    a {
+        text-decoration: none;
+        color:black;
+    }
+   
+    #email, #submit {
+        display:block;
+        margin-bottom: 20px;
+       
+    }
+    #email {
+        background-color: #FFF;
+        padding:5px;
+    }
+    #submit {
+        background-color: #f1c40f;
+        text-transform: uppercase;
+        font-weight: 900;
+        border:0px;
+        padding: 5px 0 0 10px;
+    }
+    #features {
+        margin: 30px;
+    }
+    #works {
+        display: flex;
+        justify-content: center;
+    }
+    iframe {
+        max-width: 560px;
+        width: 100%;
+    }
+    .desc {
+        height: 150px;
+        width: 100%;
+        text-align: center;
+    }
+    #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #pricing {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    .price {
+        display: block;
+        font-size: 1.5em;
+        font-weight: 600;
+        
+    }
     
+
+    .tenor,.bass,.valve {
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px;
+        max-width:300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width:100%;
+        box-sizing: border-box;
+    }
+    .tenor > h3, .bass > h3, .valve > h3 {
+            text-align: center;
+            background:#ddd;
+            margin:0;
+            padding: 15px 0;
+            font-weight: 700;
+            width: 100%;
+            
+        
+    }
+
+    .select {
+        text-align: center;
+        margin: 10px auto;
+        text-transform: uppercase;
+        background-color: #f1c40f;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        background-color: #ddd;
+        margin-top:10px
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+    }
+    li {
+        margin:5px;
+    }
+    #footer-links {
+        display: flex;
+        justify-content:flex-end;
+        align-items: flex-end;
+      
+        width: 100%;
+    }
+
+    #footer-span {
+        color: #444;
+        font-size: 0.9em;
+        display: block;
+        width: 100%;
+        text-align: end;
+    }
+    .icon {
+        display: none;
+    }
+    @media (min-width:600px){
+        .icon{
+            display: flex;
+            justify-content: center;
+            color: darkorange;
+            width:20px;
+            
+            padding-right: 40px;
+            margin:0 1.3em;
+            text-align: center;
+            
+
+        }
+        .size {
+            font-size: 3em;
+            text-align: center;
+            display: block;
+            
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            
+        }
+        .desc {
+            text-align: left;
+            display: flex;
+            margin:0;
+            flex-direction: column;
+            justify-content:first flex-end;
+            align-items: flex-start;
+        }
+        .desc > h2 {
+            text-align: left;
+            margin:0;
+        }
+    }
+
+    @media (min-width:801px){
+        #pricing {
+            margin:20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .tenor,.bass,.valve {
+            max-width: 30vw;
+        }
+        nav ul {
+            flex-direction: row;
+        }
+        #header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
